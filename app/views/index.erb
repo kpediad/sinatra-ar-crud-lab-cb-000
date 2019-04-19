@@ -1,0 +1,8 @@
+<h1>Post Index</h1>
+<ul>
+    <% @posts.each do |post| %>
+      <li><a href="/posts/<%=post.id%>"><%=post.name%>  <%=post.content%></a></li>
+    <% end %>
+</ul>
+<br>
+<button onclick="window.location.href = '/posts/new';">New Post</button>

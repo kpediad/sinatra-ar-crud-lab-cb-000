@@ -1,0 +1,12 @@
+<form  action="/posts/<%=@post.id%>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <label for="name">Name of this post: </label>
+  <input type="text" name="name" value="<%=@post.name%>">
+  <br><br>
+  <label for="content">Content: </label>
+  <br>
+  <textarea name="content" rows="8" cols="80" value="<%=@post.content%>"></textarea>
+  <br>
+  <input id="submit" type="submit" name="submit">
+</form>
+<button onclick="window.location.href = '/posts';">Index</button>
